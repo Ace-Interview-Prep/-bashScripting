@@ -8,10 +8,10 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    aeson base bytestring matplotlib process shelly
+    aeson base bytestring matplotlib process shelly which
   ];
   #executableSystemDepends = [ pkgs.arcan.ffmpeg ffmpeg ];
-  librarySystemDepends = [ pkgs.ffmpeg pkgs.cabal-install ];
+  librarySystemDepends = [ pkgs.ffmpeg pkgs.cabal-install which ];
   license = "unknown";
   mainProgram = "bashScripting";
  }
